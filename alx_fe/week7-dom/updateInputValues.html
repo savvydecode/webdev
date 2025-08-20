@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form action="">
+			<input
+				type="text"
+				id="inputField"
+				placeholder="Type something..."
+			/>
+			<button type="submit">Submit</button>
+			<p class="output"></p>
+			<p class="output"></p>
+			<p class="output"></p>
+			<p class="output"></p>
+			<p class="output"></p>
+			<p class="output"></p>
+		</form>
+		<script>
+			// the code displays the input value in the p element whiles user is entering a value into the input field.
+
+			const form = document.querySelector("form");
+			const inputField = document.getElementById("inputField");
+			const outputs = document.querySelectorAll(".output");
+
+			inputField.addEventListener("input", (event) => {
+				event.preventDefault();
+				outputs.forEach((output) => {
+					output.textContent = inputField.value;
+				});
+			});
+		</script>
+	</body>
+</html>
