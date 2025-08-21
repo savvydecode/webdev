@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: black;
+	color: green;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+}
+
+nav a {
+	text-decoration: none;
+	background-color: green;
+	color: black;
+	padding: 6px 10px;
+	border-radius: 6px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.todo {
+	border: 1px solid green;
+	margin: 1rem;
+	padding: 10px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group label {
+	font-weight: bolder;
+	margin-bottom: 10px;
+}
+
+.form-group input {
+	padding: 8px;
+	margin-bottom: 10px;
+	outline: none;
+}
+
+form button {
+	background-color: green;
+	color: black;
+	font-weight: bolder;
+	padding: 6px 8px;
+	border-radius: 8px;
+}
