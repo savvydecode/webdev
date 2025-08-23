@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- MY fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- My STYLESHEET -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- MY JAVASCRIPT -->
+        <script src="create.js" defer></script>
+        <title>Create Note</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>Notty</h1>
+                <a href="index.html">Back to Notes</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Create a new Note</h2>
+
+                <form id="note-form">
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <input required type="text" id="category" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="note">Your Note</label>
+                        <input required type="text" id="note" />
+                    </div>
+
+                    <button type="submit">Add Note</button>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
